@@ -16,9 +16,8 @@
       "role": "Developer"
     }
   ],
-  "keywords": ["wordpress", "plugin", "post type", "cleaner"],
+  "keywords": ["wordpress", "plugin", "scripts", "injector", "header", "footer"],
   "homepage": "https://klyp.co/",
-  "type": "wordpress-plugin",
   "support": {
     "issues": "https://github.com/klyp/klyp-script-injector/issues"
   },
