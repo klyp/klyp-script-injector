@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Klyp Script Injector
- * Plugin URI: https://klyp.co
+ * Plugin URI: https://github.com/klyp/klyp-script-injector
  * Description: This plugin allows you to inject scripts on header, body and footer.
  * Version: 1.0.0
  * Author: Klyp
