@@ -17,7 +17,6 @@
     }
   ],
   "keywords": ["wordpress", "plugin", "scripts", "injector", "header", "footer"],
-  "homepage": "https://klyp.co/",
   "support": {
     "issues": "https://github.com/klyp/klyp-script-injector/issues"
   },
