@@ -36,7 +36,7 @@ function klyp_hook_body( $classes ) {
 }
 
 // making sure backward compatible
-if ($wp_version >= 5.2.0) {
+if ($wp_version >= 5.2) {
     add_filter('wp_body_open', 'klyp_hook_body_v5', PHP_INT_MAX);
 } else {
     add_filter('body_class', 'klyp_hook_body', PHP_INT_MAX);
