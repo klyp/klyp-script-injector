@@ -21,7 +21,7 @@ add_action('wp_head', 'klyp_hook_head');
  * @return string
  */
 function klyp_hook_body_v5() {
-    echo get_option( 'klyp_body' );
+    echo get_option('klyp_body');
 }
 
 /**
@@ -30,13 +30,13 @@ function klyp_hook_body_v5() {
  * @return string
  */
 function klyp_hook_body( $classes ) {
-    $classes[] = '">' . get_option( 'klyp_body' ) . '<noscript></noscript novar="';
+    $classes[] = '">' . get_option('klyp_body') . '<noscript></noscript novar="';
 
     return $classes;
 }
 
 // making sure backward compatible
-if ($wp_version > 5.2) {
+if ($wp_version >= 5.2.0) {
     add_filter('wp_body_open', 'klyp_hook_body_v5', PHP_INT_MAX);
 } else {
     add_filter('body_class', 'klyp_hook_body', PHP_INT_MAX);
@@ -48,6 +48,6 @@ if ($wp_version > 5.2) {
  * @return string
  */
 function klyp_hook_footer() {
-    echo get_option( 'klyp_footer' );
+    echo get_option('klyp_footer');
 }
 add_action('wp_footer', 'klyp_hook_footer');
